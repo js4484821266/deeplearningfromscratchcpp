@@ -23,19 +23,19 @@ public:
 	}
 };
 
-// tells if possible that "A*B".
+// tells if possible that "A times B".
 bool are_multipliable(const AERmn& A, const AERmn& B)
 {
 	return A[0].size() == B.size();
 }
 
-// tells if possible that "A*x".
+// tells if possible that "A times x".
 bool are_multipliable(const AERmn& A, const vERn& x)
 {
 	return A[0].size() == x.size();
 }
 
-// tells if possible that "x*A".
+// tells if possible that "x times A".
 bool are_multipliable(const vERn& x, const AERmn& A)
 {
 	return x.size() == A.size();
