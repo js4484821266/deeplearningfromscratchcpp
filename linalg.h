@@ -6,6 +6,14 @@ using vERn = matrix_row;
 class AERmn : public std::vector<matrix_row>
 {
 public:
+	AERmn(
+		std::initializer_list<value_type> il,
+		const allocator_type& alloc = allocator_type()
+	)
+	{
+		// TODO
+	}
+
 	// converts a vector into a matrix.
 	AERmn(const vERn& x, const bool& is_column = false)
 	{
@@ -16,10 +24,11 @@ public:
 	}
 
 	// replaces the existing content with the new ROW vector.
-	vERn operator=(const vERn&x)
+	vERn operator=(const vERn& x)
 	{
 		clear();
 		push_back(x);
+		return x;
 	}
 };
 
