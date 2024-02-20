@@ -11,7 +11,8 @@ public:
 		const allocator_type& alloc = allocator_type()
 	)
 	{
-		// TODO
+		for (auto i : il)
+			push_back(i);
 	}
 
 	// converts a vector into a matrix.
