@@ -11,23 +11,4 @@ vERn forward(
 )
 {
 	// TODO
-	try
-	{
-		auto ncol = weights[0].size();
-		for (
-			auto i = weights.begin() + 1;
-			i != weights.end();
-			++i
-		)
-			if (ncol != i->size())throw 1;
-	}
-	catch (int err)
-	{
-		switch (err)
-		{
-		case 1:
-			std::clog << "The parameter for weights is not a matrix.";
-			return {};
-		}
-	}
 }
