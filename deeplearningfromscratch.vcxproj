@@ -130,6 +130,9 @@
     <ClInclude Include="linalg.h" />
     <ClInclude Include="perceptron.h" />
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AERmn_test.cpp" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
