@@ -7,7 +7,7 @@ vERn forward(
 	const vERn& input,
 	const AERmn& weights,
 	const vERn& bias,
-	const vERn (&activationf)(vERn)
+	const vERn (&f_activation)(vERn) // add an activation function manually
 )
 {
 	// TODO
